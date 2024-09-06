@@ -46,7 +46,7 @@ publishing {
     publications {
         register<MavenPublication>("release") {groupId = "com.metafurygames"
             artifactId = "mycircleimageview"
-            version = "1.0.0"
+            version = "1.1.0"
 
             afterEvaluate {
                 from(components["release"])
@@ -57,7 +57,7 @@ publishing {
 
     repositories {
         maven {
-            url = uri("https://maven.pkg.github.com/sibam99/CIrcleImage") // Replace with your repository URL
+            url = uri("https://github.com/sibam99/CIrcleImage") // Replace with your repository URL
             credentials {
                 username = System.getenv("GITHUB_USERNAME")
                 password = System.getenv("GITHUB_TOKEN")
