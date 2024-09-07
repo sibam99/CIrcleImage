@@ -46,7 +46,7 @@ publishing {
     publications {
         register<MavenPublication>("release") {groupId = "com.metafurygames"
             artifactId = "mycircleimageview"
-            version = "1.0.0"
+            version = "1.4.0"
 
             afterEvaluate {
                 from(components["release"])
@@ -63,9 +63,9 @@ publishing {
                 password = System.getenv("GITHUB_TOKEN")
             }
         }
-        google()
-        mavenCentral()
     }
 
+    println("GITHUB_USERNAME: " + System.getenv("GITHUB_USERNAME"))
+    println("GITHUB_TOKEN: " + System.getenv("GITHUB_TOKEN"))
 
 }
