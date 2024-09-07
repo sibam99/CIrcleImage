@@ -46,7 +46,7 @@ publishing {
     publications {
         register<MavenPublication>("release") {groupId = "com.metafurygames"
             artifactId = "mycircleimageview"
-            version = "1.4.0"
+            version = "1.5.0"
 
             afterEvaluate {
                 from(components["release"])
