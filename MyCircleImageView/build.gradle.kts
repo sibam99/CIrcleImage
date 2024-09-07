@@ -33,7 +33,6 @@ android {
 }
 
 dependencies {
-    implementation(libs.mycircleimageview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -47,7 +46,7 @@ publishing {
     publications {
         register<MavenPublication>("release") {groupId = "com.metafurygames"
             artifactId = "mycircleimageview"
-            version = "1.3.0"
+            version = "1.0.0"
 
             afterEvaluate {
                 from(components["release"])
